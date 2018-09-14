@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 # Auto detect text files and perform LF normalization
 * text=auto
 * linguist-vendored
 *.js linguist-vendored=false
+=======
+* linguist-vendored
+*.html linguist-vendored=false
+>>>>>>> 7960e1635666144bad5f478247e125f87e8bf6c6
