@@ -1,0 +1,235 @@
+*{margin: 0; padding: 0;}
+
+body{
+    background-color: white;
+    font-size: .9em;
+    font-family: sans-serif;
+}
+#contenedor{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: RGB(245,245,245);
+    background-image: url(../img/fondo_chico.jpg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+header{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+        float: none;
+}
+#imgHeader{
+    width: 15%;
+    min-width: 100px;
+    margin: 0;
+    float: none;
+}
+
+nav{
+    margin-bottom: 1%;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    width: 20%;
+}
+nav ul li a, nav ul li a:link{
+    text-decoration: none;
+    color: black;
+    line-height: 45px;
+    text-align: center;
+    display: block;
+    background-color: white;
+    transition: all .2s ease-in-out;
+}
+nav a:hover{
+    background-color: RGB(189,214,0);
+}
+
+#contenedorSecciones{
+    column-count: 3;
+    column-gap: 10px;
+    margin: 0 1%;
+}
+
+section{
+    width: 100%;
+    display: inline-block;
+    background-color: white;
+    margin-bottom: 4%;
+    padding: 4%;
+    box-sizing: border-box;
+    border-bottom: 3px solid RGB(189,214,0);
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.1);
+}
+
+img{
+    width: 33%;
+    margin-right: .5%;
+    float: left;
+}
+img:last-of-type{
+    margin-right: 0;
+}
+
+.fotoSola{
+    width: 100%;
+    float: none;
+    margin: 0;
+    margin-bottom: 4%;
+}
+
+h1, h2, h3, h4, h5, h6, img, p, section ul, cite{
+    margin-bottom: 4%;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 1.3em;
+    border-bottom: 2px dashed RGB(189,214,0);
+}
+h2{
+    font-size: 1.25em;
+}
+h3{
+    font-size: 1.2em;
+}
+h4{
+    font-size: 1.15em;
+}
+h5{
+    font-size: 1.1em;
+}
+h6{
+    font-size: 1.05em;
+}
+
+p{
+    text-indent: 7%;
+}
+
+section ul{
+    list-style-position: inside;
+}
+section li{
+    margin-bottom: .5%;
+}
+
+.separador{
+    clear: both;
+}
+
+iframe{
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+footer{
+    font-size: .7em;
+    background-color: white;
+}
+footer ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+}
+footer img{
+    width: 40px;
+}
+footer li{
+    display:inline-block;
+    padding: 1%;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+form{
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 4%;
+    margin-bottom: 7%;
+    border-bottom: 3px solid RGB(189,214,0);
+    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.1);
+}
+
+input, select, fieldset, textarea{
+    width: 100%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+    padding: 1%;
+    box-sizing: border-box;
+    border: 2px solid silver;
+    
+}
+
+fieldset{
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-left: 4%;
+}
+
+input[type="checkbox"]{
+    width: auto;
+    margin-bottom: 7%;
+}
+
+input[type="submit"]{
+    width: 100%;
+    padding: 2%;
+    background-color: RGB(189,214,0);
+    border: none;
+    margin-bottom: 7%;
+}
+
+@media screen and (max-width:1200px){
+    #contenedorSecciones{
+        column-count: 2;
+        column-gap: 7px;
+    }
+    section{
+        margin-bottom: 3%;
+    }
+}
+@media screen and (max-width:768px){
+    nav ul li{
+        width: 100%;
+        background-color: RGB(189,214,0);
+        margin-top: .5%;
+    }
+    
+    nav ul li a, nav ul li a:link{
+        background-color: RGB(189,214,0);
+    }
+    
+    #contenedor{
+        width: 95%;
+        background-image: none;
+    }
+    
+    #contenedorSecciones{
+        column-count: 1;
+        column-gap: 5px;
+    }
+    
+    section{
+        margin-bottom: 2%;
+    }
+    
+    form{
+        width: 90%;
+    }
+}
+

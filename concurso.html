@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>El Gourmet | Concurso</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="contenedor">
+            
+            <header>
+                <a href="index.html"><img id="imgHeader" src="img/LogoGourmet.jpg" alt="Logo de la página, cículo verde con una G en el medio, texto negro abajo que dice elgourmet"/></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Recetas</a>
+                        </li><li><a href="">Recomendaciones</a>
+                        </li><li><a href="">Videos de Cocina</a>
+                        </li><li><a href="">Tips</a>
+                        </li><li><a href="concurso.html">Concurso</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            
+            
+            <form action="enviar.php" method="post" autocomplete="off" enctype="multipart/form-data">
+
+                <h1>Formulario de inscripción a Concurso</h1>
+                <h2>Inscríbete para el primer concurso de videos de cocina del Uruguay.</h2>
+
+                <label for="txtNombre">Nombre:</label>
+                <input type="text" id="txtNombre" required>
+
+                <label for="txtDireccion">Dirección:</label>
+                <input type="text" id="txtDireccion" required>
+
+                <label for="numTelefono">Teléfono:</label>
+                <input type="number" id="numTelefono" required>
+
+                <label for="emaEmail">Email:</label>
+                <input type="email" id="emaEmail" required>
+
+                <fieldset> 
+                    <legend>Sexo:</legend>
+                    <input type="radio" id="radMujer" name="sexo" value="mujer" required>
+                    <label for="radMujer">Mujer</label>
+                    <input type="radio" id="radHombre" name="sexo" value="hombre">
+                    <label for="radHombre">Hombre</label>
+                    <input type="radio" id="radOtro" name="sexo" value="otro">
+                    <label for="radOtro">Otro</label>
+                </fieldset>
+
+                <fieldset> 
+                    <legend>Grado de dificultad de la receta:</legend>
+                    <input type="radio" id="radFacil" name="dificultad" value="1" required>
+                    <label for="radFacil">Fácil</label>
+                    <input type="radio" id="radNormal" name="dificultad" value="2">
+                    <label for="radNormal">Normal</label>
+                    <input type="radio" id="radDificil" name="dificultad" value="3">
+                    <label for="radDificil">Difícil</label>
+                    <input type="radio" id="radMuyDificil" name="dificultad" value="4">
+                    <label for="radMuyDificil">Muy difícil</label>
+                </fieldset>
+
+                <label for="slcPlato">Tipo de plato a preparar:</label>
+                <select id="slcPlato" name="plato" required>
+                    <option value="">Seleccione un opción</option>
+                    <option value="1">Ensalada</option>
+                    <option value="2">Carne</option>
+                    <option value="3">Pescado</option>
+                    <option value="4">Torta</option>
+                    <option value="5">Postre</option>
+                </select>
+
+                <label for="txaResumen">Resumen de la preparación:</label>
+                <textarea id="txaResumen" rows="10" cols="30" maxlength="200" required></textarea>
+
+                <input type="checkbox" id="chkCondiciones" name="condiciones" value="acepto" required>
+                <label for="chkCondiciones">Acepto las condiciones establecidas en el concurso</label>
+                <input type="submit">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.032740033167!2d-56.189023848976674!3d-34.90562788028601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81cca023f7a9%3A0x144e806a0872bdf0!2sAv.+18+de+Julio+%26+Ejido%2C+11200+Montevideo!5e0!3m2!1ses-419!2suy!4v1502804958348" width="600" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                <p>* "Constituyo el domicilio electrónico que registro en este formulario. Además autorizo al servicio a realizar las comunicaciones y notificaciones personales de los actos indicados en el cap. III del Instructivo de Notificaciones Personales electrónicas al domicilio electrónico constituído. Me obligo a comunicar, en la oficina donde fue constituído este dato, cualquier dato en el domicilio electrónico que denuncio en el presente formulario. Asimismo asumo la responsabilidad respecto al uso exclusivamente personal e intransferible de la cuenta de correo electrónico constituida como domicilio electrónico".</p>
+
+            </form>
+            
+            
+            
+            <footer>
+                <ul>
+                    <li><a href=""><img src="img/facebook_circle-128.png" alt="Logo de Facebook"/></a></li>
+                    <li><a href=""><img src="img/twitter_circle-128.png" alt="Logo de Twitter"/></a></li>
+                    <li><a href=""><img src="img/youtube_circle-128.png" alt="Logo de Youtube"/></a></li>
+                </ul>
+                <ul>
+                    <li>elgourmet®</li>
+                    <li>© 2010-2017</li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Políticas de privacidad</a></li>
+                    <li><a href="">Anúnciate</a></li>
+                    <li><a href="">RSS</a></li>
+                    <li><a href="">SiteMap</a></li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>
